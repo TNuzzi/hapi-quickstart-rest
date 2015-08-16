@@ -15,11 +15,13 @@ module.exports.routes = exports = function(server) {
 exports.hello = function(server) {
     var uri, options;
 
-    // Add /healthcheck/ping endpoint to HAPI server routes
+    // Adding /hello route
     server.route({
         path: "/hello",
         method: "GET",
         handler: function(request, reply) {
+
+            // Hello world response
             reply({
                 "hello": "world"
             });
