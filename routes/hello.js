@@ -9,12 +9,10 @@ module.exports.routes = exports = function(server) {
 };
 
 /**
- * This routes will automatically be loaded when the server loads.
+ * This route will automatically be loaded when the server loads.
  * @param  {[Hapi.server]} server An instance of Hapi server
  */
 exports.hello = function(server) {
-    var uri, options;
-
     // Adding /hello route
     server.route({
         path: "/hello",
